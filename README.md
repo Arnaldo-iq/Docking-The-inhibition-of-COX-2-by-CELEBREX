@@ -47,7 +47,7 @@ Note: Python 2.6 or better is required. Python 3 now works with the PyRosetta-4 
 
 In order to run PYROSETTA, you also need to compile it. Go to University of Washington website (https://els.comotion.uw.edu/) and apply for a free licence. You will get an e-mail with a link, a Username and a password. Once the download is finished, unpack the file by using the command:
 
-                              tar -vjxf PyRosetta-<version>.tar.bz2. 
+                                  tar -vjxf PyRosetta-<version>.tar.bz2 
       
 PyRosetta-4
 

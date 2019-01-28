@@ -10,7 +10,7 @@ and databases
 1) The Protein Data Bank archive (PDB: https://www.wwpdb.org/index)
 2) The Drugbank database (https://www.drugbank.ca/)
 
-We will be covering the whole precess, from compilation to the analisys of the results.
+We will be covering the whole precess, from compilation to the analisys of the results. Some of the information thatc an be found here can be found in the Rosetta Commons website, as the information made available there
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 

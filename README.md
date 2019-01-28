@@ -12,11 +12,11 @@ and databases
 
 We will be covering the whole precess, from compilation to the analisys of the results.
 
-**-----------------------------------------------------------------------------------------------------------------------**
+**-----------------------------------------------------------------------------------------------------------------------------**
 
    **STEP-1: Compiling ROSETTA-4**
    
-**-----------------------------------------------------------------------------------------------------------------------**                                             
+**-----------------------------------------------------------------------------------------------------------------------------**                                             
 Ir order to run ROSETTA, you will need to compile it first. Go to Rosetta Commons website (https://www.rosettacommons.org/software) and apply for a free licence. You will get an e-mail with a link, a Username and a password. Once the download is finished, unpack the file by using the command:
 
                                    tar -xvzf rosetta[releasenumber].tar.gz

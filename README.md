@@ -66,3 +66,12 @@ Copy the code from pyrosetta/SetPyRosettaEnvironment.sh to your .bashrc (linux) 
 
 The GUI code exists both in the rosetta source code at main/source/src/python/bindings/app/pyrosetta_toolkit and in the PyRosetta binary distributions in app/pyrosetta_toolkit If you have sourced SetPyRosettaEnvironment.sh, an alias is created to launch the GUI using the pyrosetta_toolkit command.
 
+
+**-----------------------------------------------------------------------------------------------------------------------------**
+
+   **STEP-3: Downlaodding Pymol**
+   
+**-----------------------------------------------------------------------------------------------------------------------------** 
+
+Pymol is rather mroe straightfoward than the previous packages, as it only requisres you to adquire a free licence from the Pymol website (https://pymol.org/2/) and run the script that loads its GUI:
+                                                  ./pymol

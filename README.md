@@ -28,6 +28,6 @@ Once the .tar file finishes unpacking, you need to compile it.
 
 3) Now you can build Rosetta using this general command line (make sure you are in the source folder)
 
-                              ./scons.py -j <number_of_cores_to_use> mode=release bin
+                            ./scons.py -j <number_of_cores_to_use> mode=release bin
 
 Where -j is the number of cores you wnat to use. This step may take a while, depending on the number of cores chosen 

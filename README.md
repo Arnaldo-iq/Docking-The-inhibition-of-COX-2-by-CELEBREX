@@ -7,8 +7,8 @@ A Quick tutorial on the docking of a enzyme with a small molecule, though the us
 
 and databases
 
--1) The Protein Data Bank archive (PDB: https://www.wwpdb.org/index)
--2) The Drugbank database (https://www.drugbank.ca/)
+1) The Protein Data Bank archive (PDB: https://www.wwpdb.org/index)
+2) The Drugbank database (https://www.drugbank.ca/)
 
 We will be covering the whole precess, from compilation to the analisys of the results.
 

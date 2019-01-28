@@ -59,6 +59,7 @@ In order to run PYROSETTA, you also need to compile it. Go to University of Wash
    **STEP-3: Compiling PyrosettaTools**
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
+
 You, again, must compile and install  PyrosettaTools, in ordeer to do that you must:
 
 Copy the code from pyrosetta/SetPyRosettaEnvironment.sh to your .bashrc (linux) or .bash_profile (mac). Give the full path where it says PYROSETTA= Source this. Useful to add a shortcut to pyrosetta/ipython.py in your profile.

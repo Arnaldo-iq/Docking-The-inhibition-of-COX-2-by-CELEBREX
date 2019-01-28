@@ -49,14 +49,9 @@ In order to run PYROSETTA, you also need to compile it. Go to University of Wash
 
                                     tar -vjxf PyRosetta-<version>.tar.bz2 
       
-PyRosetta-4
 
-    From the main PyRosetta directory, run python setup.py install
+ From the main PyRosetta directory, run python  by:
+ 
+                                              ./setup.py install
 
-    Be aware that running PyRosetta is now different than for PyRosetta-3: See below.
-
-    from rosetta import *
-    from pyrosetta import *
-    rosetta.init("-list -of -options")
-
-
+  

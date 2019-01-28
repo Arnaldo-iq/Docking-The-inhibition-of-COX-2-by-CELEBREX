@@ -12,11 +12,11 @@ and databases
 
 We will be covering the whole precess, from compilation to the analisys of the results.
 
-                                             **STEP-1: Compiling ROSETTA-4**
+                                         **STEP-1: Compiling ROSETTA-4**
                                              
 Ir order to run ROSETTA, you will need to compile it first. Go to Rosetta Commons website (https://www.rosettacommons.org/software) and apply for a free licence. You will get an e-mail with a link, a Username and a password. Once the download is finished, unpack the file by using the command:
 
-                                     tar -xvzf rosetta[releasenumber].tar.gz
+                                    tar -xvzf rosetta[releasenumber].tar.gz
                                      
                                      
 Once the .tar file finishes unpacking, you need to compile it.
@@ -28,6 +28,6 @@ Once the .tar file finishes unpacking, you need to compile it.
 
 -3) Now you can build Rosetta using this general command line (make sure you are in the source folder)
 
-                                    ./scons.py -j <number_of_cores_to_use> mode=release bin
+                                 ./scons.py -j <number_of_cores_to_use> mode=release bin
 
 Where -j is the number of cores you wnat to use. This step may take a while, depending on the number of cores chosen 

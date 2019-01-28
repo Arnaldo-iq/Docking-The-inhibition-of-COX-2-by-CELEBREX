@@ -53,5 +53,15 @@ In order to run PYROSETTA, you also need to compile it. Go to University of Wash
  From the main PyRosetta directory, run python  by:
  
                                               ./setup.py install
+                                       
+ **-----------------------------------------------------------------------------------------------------------------------------**
 
-  
+   **STEP-3: Compiling PyrosettaTools**
+   
+**-----------------------------------------------------------------------------------------------------------------------------** 
+You, again, must compile and install  PyrosettaTools, in ordeer to do that you must:
+
+Copy the code from pyrosetta/SetPyRosettaEnvironment.sh to your .bashrc (linux) or .bash_profile (mac). Give the full path where it says PYROSETTA= Source this. Useful to add a shortcut to pyrosetta/ipython.py in your profile.
+
+The GUI code exists both in the rosetta source code at main/source/src/python/bindings/app/pyrosetta_toolkit and in the PyRosetta binary distributions in app/pyrosetta_toolkit If you have sourced SetPyRosettaEnvironment.sh, an alias is created to launch the GUI using the pyrosetta_toolkit command.
+

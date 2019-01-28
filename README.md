@@ -33,4 +33,30 @@ Once the .tar file finishes unpacking, you need to compile it.
 
                             ./scons.py -j <number_of_cores_to_use> mode=release bin
 
-Where -j is the number of cores you wnat to use. This step may take a while, depending on the number of cores chosen 
+Where -j is the number of cores you wnat to use. This step may take a while, depending on the number of cores chosen.
+
+**-----------------------------------------------------------------------------------------------------------------------------**
+
+   **STEP-2: Compiling PyRosetta-4**
+   
+**-----------------------------------------------------------------------------------------------------------------------------**                                             
+
+
+
+Note: Python 2.6 or better is required. Python 3 now works with the PyRosetta-4 version of PyRosetta.
+
+In order to run PYROSETTA, you also need to compile it. Go to University of Washington website (https://els.comotion.uw.edu/) and apply for a free licence. You will get an e-mail with a link, a Username and a password. Once the download is finished, unpack the file by using the command:
+
+                              tar -vjxf PyRosetta-<version>.tar.bz2. 
+      
+PyRosetta-4
+
+    From the main PyRosetta directory, run python setup.py install
+
+    Be aware that running PyRosetta is now different than for PyRosetta-3: See below.
+
+    from rosetta import *
+    from pyrosetta import *
+    rosetta.init("-list -of -options")
+
+

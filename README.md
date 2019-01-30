@@ -77,5 +77,7 @@ Pymol is rather mrore straightfoward than the previous packages, as it only requ
 
                                                   ./pymol
                                                   
+The GUI is rather easy to user and intuitive. It looks like the picture below:                                                  
+                                                  
 ![pymol](https://user-images.githubusercontent.com/39299850/51978247-9b83d480-2481-11e9-955f-99533e1ae137.png)
                                        

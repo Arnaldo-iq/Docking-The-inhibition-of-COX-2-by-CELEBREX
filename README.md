@@ -14,7 +14,7 @@ We will be covering the whole precess, from compilation to the analisys of the r
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
-   ##STEP-1: Compiling ROSETTA-4**
+   ## STEP-1: Compiling ROSETTA-4**
    
 **-----------------------------------------------------------------------------------------------------------------------------**                                             
 Ir order to run ROSETTA, you will need to compile it first. Go to Rosetta Commons website (https://www.rosettacommons.org/software) and apply for a free licence. You will get an e-mail with a link, a Username and a password. Once the download is finished, unpack the file by using the command:
@@ -37,7 +37,7 @@ Where -j is the number of cores you wnat to use. This step may take a while, dep
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
-   **STEP-2: Compiling PyRosetta-4**
+   ## STEP-2: Compiling PyRosetta-4**
    
 **-----------------------------------------------------------------------------------------------------------------------------**                                             
 
@@ -56,7 +56,7 @@ In order to run PYROSETTA, you also need to compile it. Go to University of Wash
                                        
  **-----------------------------------------------------------------------------------------------------------------------------**
 
-   **STEP-3: Compiling PyrosettaTools**
+   ## STEP-3: Compiling PyrosettaTools**
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
@@ -69,7 +69,7 @@ The GUI code exists both in the rosetta source code at main/source/src/python/bi
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
-   **STEP-4: Downloading PyMOL**
+   ## STEP-4: Downloading PyMOL**
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 

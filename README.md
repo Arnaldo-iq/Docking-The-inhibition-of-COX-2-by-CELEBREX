@@ -76,3 +76,6 @@ The GUI code exists both in the rosetta source code at main/source/src/python/bi
 Pymol is rather mrore straightfoward than the previous packages, as it only requires you to adquire a free licence from the Pymol website (https://pymol.org/2/) and run the script that loads its GUI:
 
                                                   ./pymol
+                                                  
+![pymol](https://user-images.githubusercontent.com/39299850/51978247-9b83d480-2481-11e9-955f-99533e1ae137.png)
+                                       

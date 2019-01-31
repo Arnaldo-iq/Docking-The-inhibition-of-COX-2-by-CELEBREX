@@ -89,4 +89,8 @@ The GUI is rather easy to user and intuitive. It looks like the picture below:
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
 Next, go to the Protein Data Bank archive (PDB: https://www.wwpdb.org/index) and download the Prostaglandin-endoperoxide synthase 2 PDB file. Load Pymol and open the COX-2 PDB file. It may come with a other molecules attached to it, (like water or inhibitors), so remove them by either deleting them manually. You might want to run the * *clean_pdb.py* * script that will allow you to strip the PDB of information other than the desired protein coordinates.
-                                       
+Our unrelaxed, cleaned COX-2 molecule is shown below:
+
+![yes](https://user-images.githubusercontent.com/39299850/52065664-e92a3b00-256e-11e9-84c1-7eb1991c9f0c.png)
+
+

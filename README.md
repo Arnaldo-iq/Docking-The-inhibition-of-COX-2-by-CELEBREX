@@ -113,7 +113,7 @@ You see right aways that the score is largely positive **(13562.228)** (_score_c
 
     ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/relax.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _relax_v2
     
-  A output file in the PDB format is going to be generated with the new more stable atomic coordinates for the enzyme. A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
+  An output file in the PDB format is going to be generated with the new more stable atomic coordinates for the enzyme. A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
     
  
 

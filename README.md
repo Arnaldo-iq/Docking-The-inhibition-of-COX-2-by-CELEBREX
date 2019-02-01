@@ -103,4 +103,9 @@ Our unrelaxed, cleaned COX-2 molecule is shown below:
 OK, now the enzyme is ready to be dealt with. First, we are going to run the scoring function from Rosetta to get an idea of how refined the structure we got is. Bear in mind that a refined structure of this size must have a score in the thousands (negative). We run the score calculation by:
                                      
     ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/score_jd2.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _crystal_v2
+    
+  where:
+- [x] _1cx2v2.pdb_, is your input file, the molecular coordinates.
+- [x] _crystal_v2_ is the extension of the output file
+- [x] _core_jd2.default.linuxgccrelease_ is the module of Rosetta that calculates the scores
 

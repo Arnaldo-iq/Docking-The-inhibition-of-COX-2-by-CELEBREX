@@ -122,9 +122,15 @@ You see right aways that the score is largely positive **(13562.228)** (_score_c
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
-Ligands can be found available on either The Protein Data Bank archive (PDB: https://www.rcsb.org) orThe Drugbank database (https://www.drugbank.ca/). Celebrex (4-5-(4-Methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl benzenesulfonamide	C17H14F3N3O2S, https://en.wikipedia.org/wiki/Celecoxib), usually can be found in a *.sdf* format without any hydrogen atoms. In order to make it readable by Rosetta, you need, first, to add the hydorgen atoms. To do that, run Babel with the following command.
+Ligands can be found available on either The Protein Data Bank archive (PDB: https://www.rcsb.org) orThe Drugbank database (https://www.drugbank.ca/). Celebrex (4-5-(4-Methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl benzenesulfonamide	C17H14F3N3O2S, https://en.wikipedia.org/wiki/Celecoxib), usually can be found in a *.sdf* format without any hydrogen atoms. In order to make it readable by Rosetta, you need, first, to add the hydorgen atoms. To do that, run Babel with the following command:
 
                                      babel -h celebrex.sdf celebrex_withH.sdf
+                                    
+ After the  hydrogen atoms are added, run the _ _molfile_to_params.py_ _ script, from the ~HOME/rosetta/main/source/scripts/python/public/ directory, with the command:
+ 
+                ~HOME/rosetta/main/source/scripts/python/public/molfile_to_params.py/celebrex_withH.sdf
+ 
+ 
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 

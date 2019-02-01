@@ -4,13 +4,14 @@ A Quick tutorial on the docking of a enzyme with a small molecule, though the us
 1) ROSETTA-4 (Modelling software: https://www.rosettacommons.org/software)
 2) Pyrosetta and PyrosettaTools (Graphical User Interface: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066856)
 3) PyMOL (a GUI and molecule visual aid: https://pymol.org/2/) 
+4) OpenBabel (https://sourceforge.net/projects/openbabel/).
 
 and databases
 
 1) The Protein Data Bank archive (PDB: https://www.rcsb.org)
 2) The Drugbank database (https://www.drugbank.ca/)
 
-We will be covering the whole precess, from compilation to the analisys of the results. Some of the information thatc an be found here can be found in the Rosetta Commons website, as the information made available there
+We will be covering the whole precess, from compilation to the analisys of the results. Some of the information that can be found here can be found in the Rosetta Commons website, as the information made available there
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
@@ -96,7 +97,7 @@ Our unrelaxed, cleaned COX-2 molecule is shown below:
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
-   ## STEP-6- Scoring, relaxing, scoring...
+   ## STEP-6- Preparing the receptor: Scoring, relaxing, scoring...
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
@@ -114,10 +115,18 @@ You see right aways that the score is largely positive **(13562.228)** (_score_c
     ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/relax.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _relax
     
   An output file in the PDB format is going to be generated with the new more stable atomic coordinates for the enzyme (**1cx2v2_relax_0001.pdb**). A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
+  
+  **-----------------------------------------------------------------------------------------------------------------------------**
+
+   ## STEP-7- Preparing the ligand: Adding hydrogens, generating confomers and .params file
+   
+**-----------------------------------------------------------------------------------------------------------------------------** 
+
+
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
-   ## STEP-7-Docking time!
+   ## STEP-8-Docking time!
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
     

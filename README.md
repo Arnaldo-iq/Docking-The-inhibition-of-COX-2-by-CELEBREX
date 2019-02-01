@@ -111,7 +111,7 @@ OK, now the enzyme is ready to be dealt with. First, we are going to run the **s
 
 You see right aways that the score is largely positive **(13562.228)** (_score_crystal.sc_ output file), pointing out to the conclusion that the structure needs _ _"relaxing"_ _ from its original bound structure. You can do that by running  Rosetta's **relax** function, by using the following command:
 
-    ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/relax.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _relax_v2
+    ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/relax.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _relax
     
   An output file in the PDB format is going to be generated with the new more stable atomic coordinates for the enzyme (**1cx2v2_relax_0001.pdb**). A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
     

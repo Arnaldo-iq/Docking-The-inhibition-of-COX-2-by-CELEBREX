@@ -126,7 +126,7 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
 
                                      babel -h celebrex.sdf celebrex_withH.sdf
                                     
- After the  hydrogen atoms are added, run the _ _molfile_to_params.py_ _ script, from the ~HOME/rosetta/main/source/scripts/python/public/ directory, with the command:
+ After the  hydrogen atoms are added, run the _molfile_to_params.py_ script, from the ~HOME/rosetta/main/source/scripts/python/public/ directory, with the command:
  
                 ~HOME/rosetta/main/source/scripts/python/public/molfile_to_params.py/celebrex_withH.sdf
                 

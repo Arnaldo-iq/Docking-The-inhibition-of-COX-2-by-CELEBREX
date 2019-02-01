@@ -130,7 +130,7 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
  
                 ~HOME/rosetta/main/source/scripts/python/public/molfile_to_params.py/celebrex_withH.sdf
                 
- The results is two confomers of celebrex in the _ _.pdb_ _ format (LG_0001.pdb and LG_0002.pdb) and the required .params file (LG.params).
+ The results is two confomers of celebrex in the _.pdb_ format (LG_0001.pdb and LG_0002.pdb) and the required .params file (LG.params).
  
  
 

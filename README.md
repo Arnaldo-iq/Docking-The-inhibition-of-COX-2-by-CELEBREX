@@ -159,4 +159,8 @@ After executing the command, the docking starts. It takes a while and you are go
 
 Once the calculation is finished. you can check the docked complex, by using pymol and oppening the _1cx2new_global_dock_0001.pdb_ output:
 
+![index](https://user-images.githubusercontent.com/39299850/52407392-17a49a80-2ac8-11e9-913c-945ebcdc40af.png)
+
+Congrats you've just finished your first Rosetta docking protocol!
+
 

@@ -146,9 +146,10 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
     ~HOME/rosetta/main/source/bin/docking_protocol.linuxgccrelease -s 1cx2new.pdb  -nstruct 1 -partners A_B -dock_pert 3 20 -spin -randomize1 -randomize2 -out:suffix _global_dock
     
 where:
-- [x] _-nstruct 1_, Tells rosetta to generate only one structure
-- [x] _-partners A_B_, Tells Rosetta that we are docking a single chain protein
-- [x] _-dock_pert 3 20_, Tells Rosetta to translate the ligad randomly bt 3 Angstroma totated it by 20 degrees
-- [x] _-spin_, Tells Rosetta to move the ligad randomly bt 3 Angstroma nd 20 degrees
-
+- [x] _-nstruct 1_, Number of times to process each input PDB
+- [x] _-partners A_B_, Defines docking partners by ChainID
+- [x] _-dock_pert 3 20_, Do a small perturbation with partner two
+- [x] _-spin_, Spin a second docking partner around axes from center of mass of partner1 to partner2
+- [x] _-randomize1 -randomize2_ Randomize the first and second docking partner. [x] _
+- [x] _scoresdocking_protocol.linuxgccrelease_ Is the Rosetta's docking protocol
 

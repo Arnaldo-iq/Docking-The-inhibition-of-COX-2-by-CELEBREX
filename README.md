@@ -153,3 +153,4 @@ where:
 - [x] _-randomize1 -randomize2_ Randomize the first and second docking partner.
 - [x] _scoresdocking_protocol.linuxgccrelease_ Is the Rosetta's docking protocol
 
+After executing the command, the docking starts. It takes a while and you are going to get some information on your terminal:

@@ -157,4 +157,6 @@ After executing the command, the docking starts. It takes a while and you are go
 
 ![image2](https://user-images.githubusercontent.com/39299850/52406465-ac59c900-2ac5-11e9-960b-967da991fe5b.png)
 
+Once the calculation is finished. you can check the docked complex, by using pymol and oppening the _1cx2new_global_dock_0001.pdb_ output:
+
 

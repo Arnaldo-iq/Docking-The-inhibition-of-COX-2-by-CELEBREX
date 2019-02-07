@@ -140,7 +140,7 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
     
- 
+ Now we are really close to the docking itself! Append the most stable confomer of the ligand (LG_0001.pdb and LG_0002.pdb) to the end of the .pdb file of the COX-2 enzyme. Remove aeverything else from this new pdb file, that we are going to call _1cx2new.pdb_.
 
 
 

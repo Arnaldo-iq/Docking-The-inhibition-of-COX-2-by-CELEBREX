@@ -144,6 +144,11 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
  Now, you can run ROSETTA's docking protocol, that will basiscally generate random translations and rotations through a Monte-Carlo algorithim, deciding to keep the perturbation or undo-it based on the energy score of this new configuration. To run the protocol you should used the command:
 
     ~HOME/rosetta/main/source/bin/docking_protocol.linuxgccrelease -s 1cx2new.pdb  -nstruct 1 -partners A_B -dock_pert 3 20 -spin -randomize1 -randomize2 -out:suffix _global_dock
-
+    
+where:
+- [x] _-nstruct 1_, Tells rosetta to generate only one structure
+- [x] _-partners A_B_, Tells Rosetta that we are docking a single chain protein
+- [x] _-dock_pert 3 20_, Tells Rosetta to translate the ligad randomly bt 3 Angstroma totated it by 20 degrees
+- [x] _-spin_, Tells Rosetta to move the ligad randomly bt 3 Angstroma nd 20 degrees
 
 

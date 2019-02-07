@@ -150,6 +150,6 @@ where:
 - [x] _-partners A_B_, Defines docking partners by ChainID
 - [x] _-dock_pert 3 20_, Do a small perturbation with partner two
 - [x] _-spin_, Spin a second docking partner around axes from center of mass of partner1 to partner2
-- [x] _-randomize1 -randomize2_ Randomize the first and second docking partner. [x] _
+- [x] _-randomize1 -randomize2_ Randomize the first and second docking partner.
 - [x] _scoresdocking_protocol.linuxgccrelease_ Is the Rosetta's docking protocol
 

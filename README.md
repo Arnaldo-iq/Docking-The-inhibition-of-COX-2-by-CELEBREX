@@ -140,7 +140,10 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
     
- Now we are really close to the docking itself! Append the most stable confomer of the ligand (LG_0001.pdb and LG_0002.pdb) to the end of the .pdb file of the COX-2 enzyme. Remove aeverything else from this new pdb file, that we are going to call _1cx2new.pdb_.
+ Now we are really close to the docking itself! Append the most stable confomer of the ligand (LG_0001.pdb and LG_0002.pdb) to the end of the .pdb file of the COX-2 enzyme. Remove aeverything else from this new pdb file, that we are going to call _1cx2new.pdb_. After appending the ligand coordinates to  the enzyme, move the two molecules togheter using pymol, placing the ligand near the enzyme alosteric site.
+ Now, you can run ROSETTA's docking protocol, that will basiscally generate random translations and rotations through a Monte-Carlo algorithim, deciding to keep the perturbation or undo-it based on the energy score of this new configuration. To run the protocol you should used the command:
+
+                                   /home/arnaldo/Roseta/rosetta_src_2018.33.60351_bundle/main/source/bin/docking_protocol.linuxgccrelease -s 1cx2new.pdb  -nstruct 1 -partners A_B -dock_pert 3 20 -spin -randomize1 -randomize2 -out:suffix _global_dock
 
 
 

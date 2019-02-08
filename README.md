@@ -1,6 +1,6 @@
 # Docking-The-inhibition-of-COX-2-by-CELEBREX
 
-A Quick tutorial on the docking of a enzyme with a small molecule, though the use of the following software: 
+A Quick tutorial on the docking of a enzyme with a small molecule, through the use of the following software: 
 1) ROSETTA-4 (Modelling software: https://www.rosettacommons.org/software)
 2) Pyrosetta and PyrosettaTools (Graphical User Interface: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066856)
 3) PyMOL (a GUI and molecule visual aid: https://pymol.org/2/) 
@@ -11,7 +11,7 @@ and databases
 1) The Protein Data Bank archive (PDB: https://www.rcsb.org)
 2) The Drugbank database (https://www.drugbank.ca/)
 
-We will be covering the whole precess, from compilation to the analisys of the results. Some of the information that can be found here can be found in the Rosetta Commons website, as the information made available there
+We will be covering the whole precess, from compilation to the analisys of the results. Some of the information that is made available  here can be found in the Rosetta Commons website, as the information made available there.
 
 **-----------------------------------------------------------------------------------------------------------------------------**
 
@@ -61,7 +61,7 @@ In order to run PYROSETTA, you also need to compile it. Go to University of Wash
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
-You, again, must compile and install  PyrosettaTools, in ordeer to do that you must:
+You, again, must compile and install  PyrosettaTools, in order to do that you must:
 
 Copy the code from pyrosetta/SetPyRosettaEnvironment.sh to your .bashrc (linux) or .bash_profile (mac). Give the full path where it says **PYROSETTA= Source** this. Useful to add a shortcut to pyrosetta/ipython.py in your profile.
 
@@ -74,11 +74,11 @@ The GUI code exists both in the rosetta source code at main/source/src/python/bi
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
-Pymol is rather mrore straightfoward than the previous packages, as it only requires you to adquire a free licence from the Pymol website (https://pymol.org/2/) and run the script that loads its GUI:
+Pymol is rather straightfoward comapared with the previous packages, as it only requires you to adquire a free licence from the Pymol website (https://pymol.org/2/) and run the script that loads its GUI:
 
                                                   ./pymol
                                                   
-The GUI is rather easy to user and intuitive. It looks like the picture below:                                                  
+The GUI is rather easy to use and intuitive. It looks like the picture below:                                                  
                                                   
 ![pymol](https://user-images.githubusercontent.com/39299850/51978247-9b83d480-2481-11e9-955f-99533e1ae137.png)
 
@@ -89,7 +89,7 @@ The GUI is rather easy to user and intuitive. It looks like the picture below:
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
-Next, go to the Protein Data Bank archive (PDB: https://www.wwpdb.org/index) and download the Prostaglandin-endoperoxide synthase 2 PDB file. Load Pymol and open the COX-2 PDB file. It may come with a other molecules attached to it, (like water or inhibitors), so remove them by either deleting them manually. You might want to run the **clean_pdb.py** script that will allow you to strip the PDB of information other than the desired protein coordinates.
+Next, go to the Protein Data Bank archive (PDB: https://www.wwpdb.org/index) and download the Prostaglandin-endoperoxide synthase 2 PDB file. Load Pymol and open the COX-2 PDB file. It may come with other molecules attached to it, (like water or inhibitors), so remove them by either deleting them manually. You might want to run the **clean_pdb.py** script that will allow you to strip the PDB of information other than the desired protein coordinates.
 Our unrelaxed, cleaned COX-2 molecule is shown below:
 
 ![yes](https://user-images.githubusercontent.com/39299850/52065664-e92a3b00-256e-11e9-84c1-7eb1991c9f0c.png)
@@ -114,7 +114,7 @@ You see right aways that the score is largely positive **(13562.228)** (_score_c
 
     ~HOME/rosetta_src_2018.33.60351_bundle/main/source/bin/relax.default.linuxgccrelease -s 1cx2v2.pdb -out:suffix _relax
     
-  An output file in the PDB format is going to be generated with the new more stable atomic coordinates for the enzyme (**1cx2v2_relax_0001.pdb**). A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
+  An output file in the PDB format is going to be generated with the new and more stable atomic coordinates for the enzyme (**1cx2v2_relax_0001.pdb**). A new score file is also going to be generated for that new "relaxed" geometry. The new relaxed score we obtain is **-5348.366** indicating a  much more stable configuration.
   
   **-----------------------------------------------------------------------------------------------------------------------------**
 
@@ -122,7 +122,7 @@ You see right aways that the score is largely positive **(13562.228)** (_score_c
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
 
-Ligands can be found available on either The Protein Data Bank archive (PDB: https://www.rcsb.org) orThe Drugbank database (https://www.drugbank.ca/). Celebrex (4-5-(4-Methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl benzenesulfonamide	C17H14F3N3O2S, https://en.wikipedia.org/wiki/Celecoxib), usually can be found in a *.sdf* format without any hydrogen atoms. In order to make it readable by Rosetta, you need, first, to add the hydorgen atoms. To do that, run Babel with the following command:
+Ligands can be found available on either The Protein Data Bank archive (PDB: https://www.rcsb.org) or The Drugbank database (https://www.drugbank.ca/). Celebrex (4-5-(4-Methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl benzenesulfonamide	C17H14F3N3O2S, https://en.wikipedia.org/wiki/Celecoxib), usually in a *.sdf* format without any hydrogen atoms. In order to make it readable by Rosetta, you need, first, to add the hydorgen atoms. To do that, run Babel with the following command:
 
                                      babel -h celebrex.sdf celebrex_withH.sdf
                                     
@@ -140,8 +140,8 @@ Ligands can be found available on either The Protein Data Bank archive (PDB: htt
    
 **-----------------------------------------------------------------------------------------------------------------------------** 
     
- Now we are really close to the docking itself! Append the most stable confomer of the ligand (LG_0001.pdb and LG_0002.pdb) to the end of the .pdb file of the COX-2 enzyme. Remove aeverything else from this new pdb file, that we are going to call _1cx2new.pdb_. After appending the ligand coordinates to  the enzyme, move the two molecules togheter using pymol, placing the ligand near the enzyme alosteric site.
- Now, you can run ROSETTA's docking protocol, that will basiscally generate random translations and rotations through a Monte-Carlo algorithim, deciding to keep the perturbation or undo-it based on the energy score of this new configuration. To run the protocol you should used the command:
+ Now we are really close to the docking itself! Append the most stable confomer of the ligand (LG_0001.pdb and LG_0002.pdb) to the end of the _.pdb_ file of the COX-2 enzyme. Remove aeverything else from this new pdb file, that we are going to call _1cx2new.pdb_. After appending the ligand coordinates to  the enzyme, move the two molecules togheter using pymol, placing the ligand near the enzyme alosteric site.
+ Now, you can run ROSETTA's docking protocol, that will, basiscally, generate random translations and rotations through a Monte-Carlo algorithim, deciding to keep the perturbation or undo-it based on the energy score of this new configuration. To run the protocol you should used the command:
 
     ~HOME/rosetta/main/source/bin/docking_protocol.linuxgccrelease -s 1cx2new.pdb  -nstruct 1 -partners A_B -dock_pert 3 20 -spin -randomize1 -randomize2 -out:suffix _global_dock
     

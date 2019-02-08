@@ -1,0 +1,3 @@
+SEQUENCE: 
+SCORE: total_score       score dslf_fa13    fa_atr    fa_dun   fa_elec fa_intra_rep fa_intra_sol_xover4              fa_rep              fa_sol hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb linear_chainbreak lk_ball_wtd       omega overlap_chainbreak            p_aa_pp pro_close rama_prepro         ref        time yhh_planarity description 
+SCORE:   13562.228   13562.228   -25.291 -15035.266  9793.166 -2576.686       38.934             546.761            9819.893            9547.867    -244.957    -150.662     -52.247    -729.660             0.000    -168.381      24.044              0.000           -168.102   832.687    1533.778     574.753       1.000         1.597 1cx2v2_crystal_0001
